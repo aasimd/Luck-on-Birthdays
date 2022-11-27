@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 :root{
     --primary-color:#312e81;
-    --secondary-color:#dbeafe;
+    --secondary-color:#eff6ff;
 }
 body{
     font-family: 'Patrick Hand', cursive;
