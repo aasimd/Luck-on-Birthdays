@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 :root{
     --primary-color:#312e81;
-    --secondary-color:#eff6ff;
+    --secondary-color:aqua; /*#eff6ff optional*/
+    --tertiary-color:rgb(195, 255, 255);
+    --red:rgb(252, 195, 195);
 }
 body{
     font-family: 'Patrick Hand', cursive;
@@ -11,7 +13,7 @@ body{
 
 h1#heading {
     text-align: center;
-    margin: 3rem 0 5rem 0;
+    margin: 3rem 0 3rem 0;
     font-size: 3rem;
     color: var(--secondary-color);
     font-stretch: wider;
@@ -25,7 +27,7 @@ h1#heading {
 }
 label{
     font-size: 2rem;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 input#birth-date{
@@ -41,8 +43,62 @@ button{
     border-radius: .5rem;
     border: 4px black solid;
 }
-p{
+p#results{
+    color: var(--secondary-color);
     text-align: center;
     font-size: 2rem;
-    color: rgb(234, 149, 149);
+}
+p#error-message{
+    color:rgb(255, 132, 0);
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+}
+
+.center-container{
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.note{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    font-size: 1.2rem;
+    color: #eff6ff;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 2rem 0 2rem 0;
+
+}
+li.non-bullet{
+    margin-top: 1rem;
+}
+.non-bullet{
+    list-style: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    display: inline;
+    padding: 1rem;
+
+}
+
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: inherit;
 }

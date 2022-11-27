@@ -2,15 +2,17 @@ var birthDate = document.querySelector("#birth-date");
 var luckyNumber = document.querySelector("#lucky-number");
 var button = document.querySelector("#check-button");
 var results = document.querySelector("#results");
+var errorMessage = document.querySelector("#error-message");
 
 function clickHandler(){
     var dob = birthDate.value;
     dob = dob.replaceAll("-","");
     var birthDateSum = dbSum (dob);
     if (birthDateSum&&luckyNumber.value){
+        errorMessage.style.display="none"
     calculateResults(birthDateSum);
     }else{
-        results.innerText = "Please enter both the fields!! 😡"
+        errorMessage.innerText = "❌ Please enter both the fields!! 😡"
     }
 }
 
