@@ -1,0 +1,11 @@
+.container input, label, button{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+input, label{
+    margin: 1rem;
+}
+button{
+    margin-top: 2rem;
+}
