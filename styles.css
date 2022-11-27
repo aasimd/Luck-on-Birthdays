@@ -1,11 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+:root{
+    --primary-color:#312e81;
+    --secondary-color:#dbeafe;
+}
+body{
+    font-family: 'Patrick Hand', cursive;
+    background-color: var(--primary-color);
+    margin: 0px;
+}
+
+h1#heading {
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-stretch: wider;
+    padding: 1rem;
+}
 .container input, label, button{
     display: block;
     margin: auto;
     text-align: center;
+    font-size: 1rem;
 }
-input, label{
-    margin: 1rem;
+label{
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+input#birth-date{
+    margin-bottom: 2rem ;
+}
+input#lucky-number{
+
 }
 button{
     margin-top: 2rem;
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    border: 4px black solid;
+}
+p{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(234, 149, 149);
 }
