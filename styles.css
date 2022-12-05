@@ -73,7 +73,7 @@ p#error-message{
 footer {
     text-align: center;
     color: var(--secondary-color);
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
 
 }
 li.non-bullet{
@@ -84,7 +84,7 @@ li.non-bullet{
     color: var(--secondary-color);
     font-size: 1.5rem;
     display: inline;
-    padding: 1rem;
+    margin: 1rem;
 
 }
 
@@ -101,4 +101,7 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: inherit;
+}
+.contact-info{
+    margin: 1rem;
 }
